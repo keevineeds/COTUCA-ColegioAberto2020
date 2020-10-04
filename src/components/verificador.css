@@ -1,0 +1,27 @@
+.verificador{
+    width: 320px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.300);
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.visor input[type="text"]{
+    width: 300px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 30px;
+    background-color: #8686fa;
+    border: 0px transparent;
+}
+.visor input[type="text"]:focus{
+    outline: none;
+}
+.btn-light{
+    margin-top: -5px;
+    margin-left: 12px;
+    background-color: #8686fa;
+    border: 0px transparent;
+    color: #fff;
+    font-weight: 600;
+}

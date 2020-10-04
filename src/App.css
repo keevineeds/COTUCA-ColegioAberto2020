@@ -1,0 +1,41 @@
+body{
+  background-image: url('bg.png'), url('bg2.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgba(211, 210, 253, 0.87);
+}
+.linha h3{
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 35px;
+  color: #7a7af1;
+  font-size: 20px;
+}
+.obj{
+  margin-top: 100px;
+  width: 320px;
+  height: 190px;
+}
+.linha{
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+.navbar-brand img{
+  margin-right: 15px;
+}
+h3{
+  color: #7a7af1;
+}
+.bg-light{
+  background-color: rgb(255, 255, 255) !important;
+}
+.navbar-brand{
+  color: #7a7af1 !important;
+  font-weight: 600;
+}
+.btn-light:hover{
+  background-color: #7a7af1;
+}
