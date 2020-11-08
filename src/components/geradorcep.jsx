@@ -6,7 +6,6 @@ export default class geradorcep extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      uf: '',
     };
     this.gerarCEP = this.gerarCEP.bind(this)
   }
@@ -23,13 +22,11 @@ gerarCEP(){
     if(logradouro < 10){
       var cep = ''+ this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + '0' + '0' + logradouro;
     }
-
     else if(logradouro < 100){
       var cep = ''+ this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + '0' + logradouro;
     }
-
     else if (logradouro >= 100){
-      var cep = ''+ this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + logradouro;
+      var cep = '' + this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + logradouro;
     }
     document.getElementById('visor4').value = cep;
     
