@@ -17,16 +17,16 @@ RandomNum(min, max) {
   }
 
 gerarCEP(){
-    
+    var cep;
     var logradouro = this.RandomNum(0,999);
     if(logradouro < 10){
-      var cep = ''+ this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + '0' + '0' + logradouro;
+      cep = '' + this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + '0' + '0' + logradouro;
     }
     else if(logradouro < 100){
-      var cep = ''+ this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + '0' + logradouro;
+      cep = '' + this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + '0' + logradouro;
     }
     else if (logradouro >= 100){
-      var cep = '' + this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + logradouro;
+      cep = '' + this.RandomNum(1300,1313) + this.RandomNum(0,9) + '-' + logradouro;
     }
     document.getElementById('visor4').value = cep;
     

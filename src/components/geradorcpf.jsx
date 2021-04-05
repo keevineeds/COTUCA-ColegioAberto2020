@@ -69,8 +69,8 @@ export default class geradorcpf extends Component {
     //validação
     var mult = 10;
     var soma1 = 0;
-
-    for(var i = 0; i <= 8; i++){
+    var i;
+    for(i = 0; i <= 8; i++){
       var digito = cpf[i];
       soma1 += digito * mult;
       mult--;
@@ -81,7 +81,7 @@ export default class geradorcpf extends Component {
     mult = 11;
     var soma2 = 0;
 
-    for(var i = 0; i <= 9; i++){
+    for(i = 0; i <= 9; i++){
       var digito = cpf[i];
       soma2 += digito * mult;
       mult--;
